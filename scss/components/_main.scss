@@ -35,6 +35,7 @@ main{
 header {
   padding: 0 1em;
   position: relative;
+	margin-bottom: 1em;
 }
 
 .logo {
@@ -58,6 +59,7 @@ header {
 		list-style-type: none;
 		margin: 1em;
 		color: $text-color;
+		text-transform: uppercase;
 		}
 		a{
 			text-align: center;
@@ -68,7 +70,11 @@ header {
 			}
 			&:focus{
 				color: $teal;
+				border-bottom: solid 1px $teal;
 			}
+		}
+		close-btn{
+			border-bottom: 0px solid;
 		}
 } // .navigation
 
@@ -152,6 +158,9 @@ header {
       a{
         font-size: .85em;
         color: $dark-grey;
+				&:focus{
+					text-decoration: none;
+				}
       }
     }
 }

@@ -54,6 +54,7 @@ main {
 header {
   padding: 0 1em;
   position: relative;
+  margin-bottom: 1em;
 }
 
 .logo {
@@ -77,6 +78,7 @@ header {
   list-style-type: none;
   margin: 1em;
   color: #222;
+  text-transform: uppercase;
 }
 
 .navigation a {
@@ -91,6 +93,11 @@ header {
 
 .navigation a:focus {
   color: #008B8B;
+  border-bottom: solid 1px #008B8B;
+}
+
+.navigation close-btn {
+  border-bottom: 0px solid;
 }
 
 .toggle-btn,
@@ -174,6 +181,9 @@ header {
   .navigation ul a {
     font-size: .85em;
     color: #222;
+  }
+  .navigation ul a:focus {
+    text-decoration: none;
   }
 }
 
