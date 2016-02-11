@@ -46,9 +46,20 @@ body.noscript .toggle-btn {
   display: none;
 }
 
+main {
+  background-color: black;
+  height: 100vh;
+}
+
 header {
   padding: 0 1em;
   position: relative;
+}
+
+.logo {
+  width: 10em;
+  margin-top: 1em;
+  left: 2em;
 }
 
 .toggle-btn {
@@ -59,17 +70,27 @@ header {
 
 .navigation ul {
   padding: 0;
+  text-align: center;
 }
 
 .navigation li {
   list-style-type: none;
+  margin: 1em;
+  color: #222;
 }
 
 .navigation a {
-  display: block;
   text-align: center;
   padding: .5em 1em;
   text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #008B8B;
+}
+
+.navigation a:focus {
+  color: #008B8B;
 }
 
 .toggle-btn,
@@ -85,7 +106,7 @@ header {
   height: 40px;
   width: 40px;
   display: inline-block;
-  padding: 13px 11px;
+  padding-top: 2.5em;
 }
 
 .toggle-btn span,

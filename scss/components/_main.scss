@@ -27,9 +27,20 @@ body{
   }
 }
 
+main{
+	background-color: black;
+	height: 100vh;
+}
+
 header {
   padding: 0 1em;
   position: relative;
+}
+
+.logo {
+	width: 10em;
+	margin-top: 1em;
+	left: 2em;
 }
 
 .toggle-btn{
@@ -41,15 +52,23 @@ header {
 .navigation{
 	ul{
 		padding: 0;
+		text-align: center;
 	}
 	li{
 		list-style-type: none;
+		margin: 1em;
+		color: $text-color;
 		}
 		a{
-			display: block;
 			text-align: center;
 			padding: .5em 1em;
 			text-decoration: none;
+			&:hover{
+				color: $teal;
+			}
+			&:focus{
+				color: $teal;
+			}
 		}
 } // .navigation
 
@@ -63,7 +82,7 @@ header {
     height: 40px;
     width: 40px;
     display: inline-block;
-    padding: 13px 11px;
+    padding-top: 2.5em;
   }
 	span{
 		@include element-invisible;
