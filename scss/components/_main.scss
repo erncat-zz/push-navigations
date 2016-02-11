@@ -18,7 +18,7 @@ html {
 }
 
 body{
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
